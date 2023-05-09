@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.contain {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+aside {
+    position: relative;
+    width: 300px;
+    height: 100vh;
+    background-color: white;
+    padding: 30px 40px;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+}
+
+.navigation>div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 35px;
+    cursor: pointer;
+}
+
+.navigation>div svg {
+    margin-right: 25px;
+}
+
+.navigation>div p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: black;
+}
+
+.navigation>div.activated p {
+    color: #FF8D19;
+}
+
+.navigation>div.activated svg path {
+    stroke: #FF8D19;
+}
+
+aside a {
+    position: absolute;
+    bottom: 30px;
+    left: 40px;
+    color: #FF8D19;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+section {
+    position: relative;
+    height: 100vh;
+    background-image: url('/img/backadmin.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-grow: 1;
+    padding: 60px 70px;
+}
+
+section>div {
+    position: absolute;
+    width: 1440px;
+    min-height: 200px;
+    max-height: 876px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 13px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 29px;
+    padding: 40px 50px;
+    transition: 700ms;
+    overflow-y: scroll;
+}
+
+section>div h1 {
+    width: 100%;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 22px;
+    color: #FF8D19;
+}
+
+.application-section {
+    top: 60px;
+    height: 876px;
+    z-index: 1;
+}
+
+section>div::-webkit-scrollbar {
+    width: 1vw;
+}
+
+section>div::-webkit-scrollbar-track {
+    background: transparent;
+    margin: 20px 10px;
+}
+
+section>div::-webkit-scrollbar-thumb {
+    background: #D9D9D9;
+    border-radius: 26px;
+    border: none;
+}
+
+.application-section table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+
+.application-section table thead tr {
+    border-bottom: 2px solid #959595;
+}
+
+.application-section table thead td {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+}
+
+.application-section table tbody td {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    padding: 20px;
+}
+
+.application-section table tbody tr {
+    border-bottom: 2px solid #D9D9D9;
+}
+
+.application-section table tbody td button {
+    width: 131px;
+    height: 28px;
+    border-radius: 12px;
+    border: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    color: white;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.treatment {
+    background: #FF8D19;
+}
+
+.active {
+    background: #4ED3F4;
+}
+
+.complite {
+    background: #BBBBBB;
+}
+
+.review-section {
+    top: 101vh;
+    z-index: 3;
+    height: 876px;
+}
+
+.review-section>div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.review-section>div>div {
+    position: relative;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #FFFFFF;
+    border: 2px solid #FFDC46;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.25);
+    border-radius: 27px;
+    padding: 30px 40px;
+}
+
+.review-section>div>div p:first-child {
+    text-align: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.review-section>div>div div {
+    width: 90px;
+    height: 90px;
+    border: 5px solid #FFD145;
+    border-radius: 200px;
+    margin-bottom: 15px;
+}
+
+.review-section>div>div div img {
+    width: 100%;
+    height: 100%;
+    border-radius: 200px;
+}
+
+.name {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.party {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    color: #595959;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.review-section>div>div a {
+    position: relative;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.review-section>div>div a:nth-child(6) {
+    width: 171px;
+    height: 24px;
+    background: #3ECD7B;
+    border-radius: 6px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.review-section>div>div a:last-child {
+    width: 139px;
+    height: 24px;
+    background: #FD2B4A;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.review-section>div>div img {
+    width: 100%;
+}
+
+.user-section {
+    top: 101vh;
+    z-index: 4;
+    height: 876px;
+}
+
+.user-section table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+
+.user-section table thead tr {
+    border-bottom: 2px solid #959595;
+}
+
+.user-section table thead td {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+}
+
+.user-section table tbody td {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    padding: 20px;
+}
+
+.user-section table tbody td img {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+}
+
+.user-section table tbody td a button {
+    width: 100px;
+    height: 28px;
+    background: #F93A3A;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 13px;
+    color: white;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
+
+.user-section table tbody tr {
+    border-bottom: 2px solid #D9D9D9;
+}
