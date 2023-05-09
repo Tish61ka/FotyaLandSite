@@ -61,9 +61,10 @@
                                 <td><?= $row['name'] ?></td>
                                 <td><?= $row['number'] ?></td>
                                 <td>
-                                    <button disabled class="treatment">В обработке</button>
-                                    <button class="active">Активная</button>
-                                    <button class="complite">Завершено</button>
+                                    <!-- Юраааааа в первой кнопке активный статус выводится -->
+                                    <button disabled class="treatment"><?= $row['status'] ?></button>
+                                    <a href="/functions/active_status.php?id=<?= $row['id'] ?>"><button class="active">Активная</button></a>
+                                    <a href="/functions/end_status.php?id=<?= $row['id'] ?>"><button class="complite">Завершено</button></a>
                                 </td>
                             </tr>
                         <?
@@ -71,7 +72,6 @@
                         ?>
                     </tbody>
                 </table>
-
             </div>
             <div class="review-section">
                 <h1>Отзывы</h1>

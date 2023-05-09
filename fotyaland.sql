@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Апр 27 2023 г., 22:45
+-- Время создания: Май 09 2023 г., 21:00
 -- Версия сервера: 8.0.30
 -- Версия PHP: 8.1.9
 
@@ -58,8 +58,16 @@ INSERT INTO `animators` (`id`, `main_img`, `left_img`, `right_img`, `bottom_firs
 CREATE TABLE `otziv` (
   `id` int NOT NULL,
   `name` varchar(255) DEFAULT NULL,
-  `number` varchar(11) DEFAULT NULL
+  `number` varchar(11) DEFAULT NULL,
+  `status` varchar(250) DEFAULT 'В обработке'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Дамп данных таблицы `otziv`
+--
+
+INSERT INTO `otziv` (`id`, `name`, `number`, `status`) VALUES
+(3, 'Даниил', '89673312786', 'В обработке');
 
 -- --------------------------------------------------------
 
@@ -153,7 +161,7 @@ ALTER TABLE `animators`
 -- AUTO_INCREMENT для таблицы `otziv`
 --
 ALTER TABLE `otziv`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT для таблицы `reviews`
