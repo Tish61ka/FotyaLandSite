@@ -118,7 +118,6 @@
   </section>
 
   <section class="tarif">
-
     <div class="bottom-div-tarif container">
       <div>
         <h1>Не нашли подходящего персонажа?</h1>

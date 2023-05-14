@@ -111,23 +111,23 @@
                     </div>
                     <div>
                         <label for="">Пароль:</label>
-                        <input type="password" name="password" required>
+                        <input type="password" name="password">
                     </div>
 
                     <!-- <label for="">Avatar</label>
         <input type="file" name="avatar" required> -->
 
                     <button type="submit">Редактировать</button>
-                    <?php
-                    if (isset($_SESSION['message'])) {
-                    ?>
+                    <!-- <?php
+                            if (isset($_SESSION['message'])) {
+                            ?>
                         <div class="alert alert-danger alert-dismissible fade show" role="alert">
                             <?= $_SESSION['message'] ?>
                         </div>
                     <?
-                    }
-                    unset($_SESSION['message']);
-                    ?>
+                            }
+                            unset($_SESSION['message']);
+                    ?> -->
                 </form>
 
                 <a href="./functions/logout.php">Выход</a>

@@ -115,6 +115,19 @@ header nav ul a:last-child li h3 {
   margin-right: 5px;
 }
 
+header nav ul a li button {
+  width: 200px;
+  height: 45px;
+  background: linear-gradient(180deg, #ffb641 0%, #ff932c 100%);
+  border: 1px solid #ffffff;
+  border-radius: 28px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  color: white;
+}
+
 /* Close section header */
 .mobile-header {
   display: none;
@@ -428,86 +441,102 @@ header nav ul a:last-child li h3 {
 .inside-div-1 {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin-bottom: 130px;
-  padding-top: 60px;
+  padding: 50px 70px;
 }
 
-.section-div {
+.inside-div-1 h2 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.inside-div-1>div {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  width: 100%;
-  height: 649px;
-  margin-top: 0px;
+  flex-wrap: wrap;
+  gap: 35px;
 }
 
-.section-div div {
+.inside-div-1>div>div {
   position: relative;
+  width: 300px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  width: 414px;
-  height: 589px;
-  background: #ffffff;
-  border: 2px solid #ff932c;
+  background: #FFFFFF;
+  border: 2px solid #FFDC46;
   box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.25);
   border-radius: 27px;
+  padding: 30px 40px;
 }
 
-.section-div div p:first-child {
-  width: 282px;
+.inside-div-1>div>div img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.inside-div-1>div>div p:first-child {
+  text-align: center;
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
-  font-size: 15px;
-  line-height: 24px;
-  text-align: center;
-  margin-bottom: 60px;
-}
-
-.section-div div img {
-  width: 160px;
-  height: 160px;
+  font-size: 14px;
+  line-height: 16px;
   margin-bottom: 20px;
+  margin-top: 10px;
 }
 
-.section-div div h2 {
-  width: 165px;
+.inside-div-1>div>div div {
+  width: 90px;
+  height: 90px;
+  border: 5px solid #FFD145;
+  border-radius: 200px;
+  margin-bottom: 15px;
+}
+
+.name {
+  font-family: 'Montserrat';
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 18px;
-  line-height: 24px;
-  text-align: center;
+  color: #000000;
   margin-bottom: 10px;
 }
 
-.section-div div p:last-child {
-  width: 219px;
+.party {
+  font-family: 'Montserrat';
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 15px;
-  line-height: 18px;
   color: #595959;
   text-align: center;
+  margin-bottom: 15px;
 }
+
 
 /* Close section reviews */
 
 /* Open section tarif */
 
 .tarif {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   position: relative;
   background-image: url("/img/backgr4.png");
-  width: 1920px;
-  height: 794px;
-  padding-top: 80px;
+  width: 100vw;
   margin-bottom: 70px;
 }
 
+.bottom-div-tarif {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.bottom-div-tarif img {
+  position: relative;
+  width: 62%;
+  margin-left: 100px;
+}
 
 .bottom-div-tarif h1 {
   width: 380px;
@@ -515,8 +544,12 @@ header nav ul a:last-child li h3 {
   font-style: normal;
   font-weight: 900;
   font-size: 48px;
-  line-height: 59px;
   margin-bottom: 30px;
+
+}
+
+.bottom-div-tarif>div {
+  margin-top: 80px;
 }
 
 .bottom-div-tarif>div:first-child p {
@@ -609,10 +642,6 @@ input[type="checkbox"] {
   cursor: pointer;
 }
 
-.bottom-div-tarif img {
-  margin-top: -713px;
-  margin-left: 800px;
-}
 
 /* Close section tarif */
 

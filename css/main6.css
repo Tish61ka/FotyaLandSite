@@ -117,6 +117,19 @@ header nav ul a:last-child li h3 {
   margin-right: 5px;
 }
 
+header nav ul a li button {
+  width: 200px;
+  height: 45px;
+  background: linear-gradient(180deg, #ffb641 0%, #ff932c 100%);
+  border: 1px solid #ffffff;
+  border-radius: 28px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  color: white;
+}
+
 /* Close section header */
 .mobile-header {
   display: none;
@@ -234,7 +247,7 @@ header nav ul a:last-child li h3 {
 }
 
 .imgl {
-  margin-top: -355px;
+  margin-top: -471px;
 
 }
 

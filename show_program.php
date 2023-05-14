@@ -213,7 +213,6 @@
 
 
   <section class="tarif">
-
     <div class="bottom-div-tarif container">
       <div>
         <h1>Не нашли подходящего персонажа?</h1>
@@ -241,6 +240,7 @@
       </div>
       <img src="/img/tarifimg2.png" alt="No Ethernet" />
     </div>
+  </section>
   </section>
   <footer>
     <div class="container">

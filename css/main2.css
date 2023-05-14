@@ -100,6 +100,19 @@ header nav ul a:last-child li {
   color: white;
 }
 
+header nav ul a li button {
+  width: 200px;
+  height: 45px;
+  background: linear-gradient(180deg, #ffb641 0%, #ff932c 100%);
+  border: 1px solid #ffffff;
+  border-radius: 28px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  color: white;
+}
+
 header nav ul a:last-child li img {
   width: 46px;
   height: 46px;
@@ -258,19 +271,19 @@ header nav ul a:last-child li h3 {
 /* Open section show */
 
 .show {
-  margin-top: -50px;
+  margin-top: 20px;
   position: relative;
   width: 100vw;
-  height: 1285px;
   padding-top: 65px;
   margin-bottom: 100px;
 }
 
 .grid-show {
-  display: grid;
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-columns: repeat(3, 1fr);
-  justify-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
   width: 100%;
 }
 
@@ -335,17 +348,22 @@ header nav ul a:last-child li h3 {
 /* Open section tarif */
 
 .tarif {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   position: relative;
   background-image: url("/img/backgr3.png");
-  width: 1920px;
-  height: 794px;
-  padding-top: 80px;
+  width: 100vw;
   margin-bottom: 70px;
 }
 
+.bottom-div-tarif {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.bottom-div-tarif img {
+  position: relative;
+  margin-left: 100px;
+}
 
 .bottom-div-tarif h1 {
   width: 380px;
@@ -353,8 +371,12 @@ header nav ul a:last-child li h3 {
   font-style: normal;
   font-weight: 900;
   font-size: 48px;
-  line-height: 59px;
   margin-bottom: 30px;
+
+}
+
+.bottom-div-tarif>div {
+  margin-top: 80px;
 }
 
 .bottom-div-tarif>div:first-child p {
@@ -447,10 +469,6 @@ input[type="checkbox"] {
   cursor: pointer;
 }
 
-.bottom-div-tarif img {
-  margin-top: -713px;
-  margin-left: 800px;
-}
 
 /* Close section tarif */
 

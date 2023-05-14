@@ -144,15 +144,15 @@
             <p>
               <?= $row['text'] ?>
             </p>
-            <img src="<?= $row['img'] ?>" alt="No Ethernet" />
-            <h2><?= $row['name'] ?></h2>
+            <div>
+              <img src="<?= $row['img'] ?>" alt="No Ethernet" />
+            </div>
+            <p><?= $row['name'] ?></p>
             <p>Мероприятие: <?= $row['event'] ?></p>
           </div>
         <?
         }
         ?>
-
-
         <!-- <div>
           <p>
             Здравствуйте ) Хочу поделиться своим впечатлением о данном фильме.
@@ -262,7 +262,6 @@
 
 
   <section class="tarif">
-
     <div class="bottom-div-tarif container">
       <div>
         <h1>Не нашли подходящего персонажа?</h1>
@@ -290,6 +289,8 @@
       </div>
       <img src="/img/tarifimg4.png" alt="No Ethernet" />
     </div>
+
+
   </section>
   <footer>
     <div class="container">
