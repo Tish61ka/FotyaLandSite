@@ -202,6 +202,19 @@ header nav ul a li button {
   color: black;
 }
 
+.mobile-header ul a:first-child li button {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, #ffb641 0%, #ff932c 100%);
+  border: 1px solid #ffffff;
+  border-radius: 28px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  color: white;
+}
+
 
 .elem span {
   display: block;
@@ -383,43 +396,45 @@ header nav ul a li button {
 
 .under-header {
   width: 100vw;
+  height: 100%;
   background-image: url('/img/backhead4.png');
-  padding-top: 100px;
-  padding-bottom: 100px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 150px;
+  padding-bottom: 150px;
 }
 
-.under-header div div:first-child {
+.under-header div {
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
-  margin-left: 120px;
 }
 
-.under-header div div:first-child h1 {
-  padding-top: 90px;
+.under-header div h1 {
   text-align: center;
   font-style: normal;
   font-weight: 1000;
   font-size: 45px;
-  line-height: 39px;
   color: #ffffff;
-  margin-bottom: 23px;
+  margin-bottom: 60px;
+  margin-top: 100px;
 }
 
-.under-header div div:first-child p {
-  margin-top: 40px;
+.under-header div p {
+  max-width: 1200px;
   text-align: center;
-  width: 1200px;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
-  line-height: 30px;
   color: rgb(255, 255, 255);
   margin-bottom: 40px;
 }
 
-.under-header div div:first-child button {
+.under-header div button {
   width: 400px;
   height: 65px;
   background: #ffc400;
@@ -429,9 +444,7 @@ header nav ul a li button {
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
-  line-height: 24px;
   color: black;
-  cursor: pointer;
 }
 
 /* Close section under-header */
@@ -534,7 +547,6 @@ header nav ul a li button {
 
 .bottom-div-tarif img {
   position: relative;
-  width: 62%;
   margin-left: 100px;
 }
 
@@ -835,6 +847,39 @@ footer hr {
   .container {
     max-width: 1000px;
   }
+
+  .inside-div-1 {
+    padding: 50px 15px;
+  }
+
+  .bottom-div-tarif {
+    width: 100%;
+  }
+
+  .bottom-div-tarif div {
+    width: 100%;
+  }
+
+  .bottom-div-tarif img {
+    display: none;
+  }
+
+  .bottom-div-tarif h1 {
+    width: 100%;
+  }
+
+  .bottom-div-tarif>div:first-child p {
+    width: 100%;
+  }
+
+  .input {
+    width: 100%;
+  }
+
+  .bottom-div-tarif form input[type="text"] {
+    width: 100%;
+
+  }
 }
 
 @media screen and (max-width: 1050px) {
@@ -859,6 +904,23 @@ footer hr {
   header nav ul a:last-child li h3 {
     font-size: 13px;
   }
+
+  .grid-show {
+    justify-content: center;
+  }
+
+  .inside-div-1 {
+    padding: 30px 20px;
+  }
+
+  .inside-div-1>div {
+    justify-content: center;
+  }
+
+  .inside-div-1>div>div {
+    width: 70%;
+  }
+
 
   .first-footer-div:nth-child(2) div p {
     font-size: 12px;
@@ -925,6 +987,10 @@ footer hr {
   .container {
     max-width: 400px;
   }
+
+  .inside-div-1>div>div {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 450px) {
@@ -934,6 +1000,40 @@ footer hr {
 
   .mobile-header a:first-child img {
     width: 50%;
+  }
+
+  .under-header div h1 {
+    margin-top: 0;
+  }
+
+  .under-header div p {
+    display: none;
+  }
+
+  .under-header div button {
+    width: 100%;
+  }
+
+  .inside-div-1 {
+    padding: 20px 10px;
+  }
+
+  .bottom-div-tarif h1 {
+    font-size: 36px;
+  }
+
+  .bottom-div-tarif>div>p:nth-child(2) {
+    display: none;
+  }
+
+  .bottom-div-tarif>div:first-child p {
+    font-size: 12px;
+  }
+
+  .bottom-div-tarif button {
+    width: 60%;
+    flex-grow: 1;
+    margin-left: 10px;
   }
 
   footer p {
