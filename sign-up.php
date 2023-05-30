@@ -11,43 +11,58 @@
 </head>
 
 <body>
+    <a href="/index.php" class="logo">
+        <img src="img/logo.png" alt="хз">
+    </a>
     <section class="sign">
-        <a href="/index.php">
-            <img src="img/logo.png" alt="хз">
-        </a>
-        <form class="box">
+        <form enctype="multipart/form-data" action="./functions/registration.php" method="POST">
             <h1>Регистрация</h1>
-            <p>Уже зарегистрированы?</p>
-            <a href="sign-in.php">Вход</a>
-        </form>
-        <form class="box2" enctype="multipart/form-data" action="./functions/registration.php" method="POST">
-            <h2>Login:</h2>
-            <input type="text" required name="login" placeholder="">
-            <h2>Name:</h2>
-            <input type="text" required name="name" placeholder="">
-            <h2>E-mail:</h2>
-            <input type="text" required name="email" placeholder="">
-            <h2>Avatar</h2>
-            <input type="file" name="avatar" required>
-            <h3>Password</h3>
-            <input type="password" required name="password" placeholder="">
-            <h4>Repeat Password</h4>
-            <input type="password" required name="password_confirm" placeholder="">
-            <input type="checkbox" required placeholder="">
-            <p>Соглашаюсь со всеми условиями<br>
-                реального и сказочного мира
-            </p>
-            <input type="submit" value="Войти">
-            <?php
-            if (isset($_SESSION['message'])) {
-            ?>
-                <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                    <?= $_SESSION['message'] ?>
+            <div>
+                <p>Уже зарегистрированы?</p>
+                <a href="sign-in.php">Вход</a>
+            </div>
+            <div>
+                <div>
+                    <label>Login:</label>
+                    <input type="text" required name="login" required>
                 </div>
-            <?
-            }
-            unset($_SESSION['message']);
-            ?>
+                <div>
+                    <label>Name:</label>
+                    <input type="text" required name="name" required>
+                </div>
+                <div>
+                    <label>E-mail:</label>
+                    <input type="text" required name="email" required>
+                </div>
+                <div>
+                    <label>Avatar</label>
+                    <input type="file" name="avatar" required>
+                </div>
+                <div>
+                    <label>Password</label>
+                    <input type="password" required name="password" required>
+                </div>
+                <div>
+                    <label>Repeat Password</label>
+                    <input type="password" required name="password_confirm" required>
+                </div>
+                <div class="check">
+                    <input type="checkbox" required required>
+                    <p>Соглашаюсь со всеми условиями
+                    </p>
+                </div>
+                <input type="submit" value="Зарегистрироваться">
+                <?php
+                if (isset($_SESSION['message'])) {
+                ?>
+                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                        <?= $_SESSION['message'] ?>
+                    </div>
+                <?
+                }
+                unset($_SESSION['message']);
+                ?>
+            </div>
         </form>
     </section>
 </body>

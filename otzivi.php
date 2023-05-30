@@ -85,8 +85,6 @@
     <div class="modal-form">
       <img src="/img/cross.svg" onclick="closeModal()"></img> <!-- Тут должно быть свг крестик не забудь перенисти онклик в свг -->
       <h1>Оставить отзыв</h1>
-      <p>Не зарегистрированы?</p>
-      <a href="sign-up.html">Зарегистрироваться</a>
     </div>
     <form class="box2" action="./functions/review.php" enctype="multipart/form-data" method="POST">
       <h2>Ваше Имя:</h2>

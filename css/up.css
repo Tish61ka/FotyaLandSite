@@ -17,117 +17,106 @@ html {
 
 body {
     background-image: url("/img/sign-fon.png");
+    background-size: cover;
 }
 
-.sign a img {
-    margin-top: 30px;
-    margin-left: 100px;
-}
-
-.box {
-    transition: 0.5s;
-    width: 700px;
-    height: 1050px;
-    padding: 40px;
+.logo img {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: white;
-    text-align: center;
+    top: 30px;
+    left: 100px;
+}
+
+.sign {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.sign form {
+    width: 30%;
+    padding: 40px;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.25);
+    background: white;
     border-radius: 26px;
 }
 
-.box h1 {
-    color: rgb(0, 0, 0);
-    font-weight: 500px;
-}
-
-.box p {
-    color: rgb(0, 0, 0);
-    font-size: 20px;
-    padding: 30px 200px 0px 0px;
-    font-weight: 500;
-}
-
-.box a {
-    position: absolute;
-    color: #FF0000;
-    font-size: 20px;
-    margin-left: 100px;
-    margin-top: -23px;
-    font-weight: 500;
-}
-
-.box2 {
-    transition: 0.5s;
-    margin-top: 60px;
-    width: 560px;
-    height: 785px;
-    padding: 40px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: rgb(255, 255, 255);
+.sign form h1 {
     text-align: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.sign form>div:nth-child(2) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.sign form>div p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.sign form>div a {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    color: #FF0000;
+}
+
+.sign form>div:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
     border-radius: 11px;
+    background: rgb(255, 255, 255);
+    padding: 20px 40px;
 }
 
-.box2 h2 {
-    text-align: start;
-    color: rgb(0, 0, 0);
-    font-size: 20px;
+.sign form>div:nth-child(3) div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    margin-bottom: 15px;
 }
 
-.box2 h3 {
-    margin-top: 20px;
-    text-align: start;
-    color: rgb(0, 0, 0);
-    font-size: 20px;
+.sign form>div:nth-child(3) div label {
+    margin-bottom: 10px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
 }
 
-.box2 h4 {
-    margin-top: 20px;
-    text-align: start;
-    color: rgb(0, 0, 0);
-    font-size: 20px;
-}
-
-.box2 input[type="text"],
-.box2 input[type="password"],
-.box2 input[type="email"] {
-    margin-top: 20px;
-    align-self: start;
-    border: 0;
-    width: 464px;
-    height: 58px;
-    outline: none;
+.sign form>div:nth-child(3) div input:not(input[type=file], input[type=checkbox]) {
+    height: 50px;
     background: #FFFFFF;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
     border-radius: 11px;
-    transition: 0.25s;
-    padding-left: 10px;
-    font-size: 20px;
-}
-
-.box2 input[type="checkbox"] {
-    height: 20px;
-    width: 20px;
-    margin-right: 440px;
-    margin-top: 20px;
-}
-
-.box2 p {
+    border: none;
+    outline: none;
+    padding: 0 10px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
     font-size: 14px;
-    text-align: start;
-    margin-top: -25px;
-    margin-left: 50px;
 }
 
-.box2 input[type="file"]::file-selector-button {
+.sign form input[type="file"]::file-selector-button {
     color: white;
     border: 0;
     margin-top: 10px;
@@ -136,20 +125,130 @@ body {
     width: 160px;
     height: 35px;
     background: #FF0000;
-
     border-radius: 11px;
+    cursor: pointer;
 }
 
-.box2 input[type="submit"] {
-    font-size: 20px;
-    font-weight: 500;
-    margin-top: 20px;
-    border: 0;
-    width: 200px;
+.sign form input[type="file"] {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.check {
+    display: flex;
+    flex-direction: row !important;
+    gap: 15px;
+}
+
+.check p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 8px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+input[type=checkbox] {
+    width: 21px;
+    height: 21px;
+}
+
+input[type=submit] {
+    width: 220px;
     height: 40px;
-    text-align: center;
     background: #FF0000;
-    box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.6);
     border-radius: 11px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
     color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    transition: 400ms;
+}
+
+input[type=submit]:hover {
+    box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.6);
+}
+
+@media screen and (max-width: 1650px) {
+    .sign form>div:nth-child(3) div {
+        margin-bottom: 10px;
+    }
+
+    .sign form>div:nth-child(3) div input:not(input[type=file], input[type=checkbox]) {
+        height: 40px;
+    }
+
+    .sign form {
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .check {
+        align-items: center;
+    }
+
+    .sign {
+        align-items: start;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .sign form>div p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 1240px) {
+    html {
+        overflow-y: auto;
+    }
+
+    .sign {
+        padding-bottom: 50px;
+
+    }
+
+    .sign form {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    .sign {
+        align-items: center;
+    }
+
+    .sign form {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 825px) {
+
+    .sign form {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .sign {
+        margin-top: 60px;
+    }
+
+    .logo img {
+        position: absolute;
+        top: 20px;
+        left: 0;
+        transform: translateX(80%);
+    }
+
+    .sign form {
+        width: 100%;
+    }
 }

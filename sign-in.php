@@ -11,35 +11,42 @@
 </head>
 
 <body>
+    <a href="/index.php" class="logo">
+        <img src="img/logo.png" alt="хз">
+    </a>
     <section class="sign">
-        <a href="/index.php">
-            <img src="img/logo.png" alt="хз">
-        </a>
-        <form class="box">
+        <form action="./functions/login.php" method="POST">
             <h1>Вход</h1>
-            <p>Не зарегистрированы?</p>
-            <a href="sign-up.php">Зарегистрироваться</a>
-        </form>
-        <form class="box2" action="./functions/login.php" method="POST">
-            <h2>Login:</h2>
-            <input type="text" required name="login" placeholder="">
-            <h3>Password</h3>
-            <input type="password" required name="password" placeholder="">
-            <input type="checkbox" required placeholder="">
-            <p>Соглашаюсь со всеми условиями<br>
-                реального и сказочного мира
-            </p>
-            <input type="submit" value="Войти">
-            <?php
-            if (isset($_SESSION['message'])) {
-            ?>
-                <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                    <?= $_SESSION['message'] ?>
+            <div>
+                <p>Не зарегистрированы?</p>
+                <a href="sign-up.php">Зарегистрироваться</a>
+            </div>
+            <div>
+                <div>
+                    <label>Login:</label>
+                    <input type="text" required name="login" required>
                 </div>
-            <?
-            }
-            unset($_SESSION['message']);
-            ?>
+                <div>
+                    <label>Password</label>
+                    <input type="password" required name="password" required>
+                </div>
+                <div class="check">
+                    <input type="checkbox" required required>
+                    <p>Соглашаюсь со всеми условиями
+                    </p>
+                </div>
+                <input type="submit" value="Войти">
+                <?php
+                if (isset($_SESSION['message'])) {
+                ?>
+                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                        <?= $_SESSION['message'] ?>
+                    </div>
+                <?
+                }
+                unset($_SESSION['message']);
+                ?>
+            </div>
         </form>
     </section>
 </body>

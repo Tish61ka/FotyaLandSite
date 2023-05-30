@@ -998,6 +998,59 @@ footer hr {
     max-width: 300px;
   }
 
+  .modal-form {
+    margin-top: 100px;
+    width: 100vw;
+    height: 800px;
+  }
+
+  .box2 {
+    margin-top: 120px;
+    width: 90%;
+    height: 600px;
+    padding: 40px;
+  }
+
+  .box2 input[type="text"],
+  .box2 input[type="password"] {
+    padding-left: 20px;
+    margin-top: 20px;
+    width: 100%;
+    height: 48px;
+  }
+
+  .box2 input[type="submit"] {
+    margin-top: 35px;
+    width: 200px;
+    height: 40px;
+  }
+
+  .pod-form {
+    width: 100%;
+  }
+
+  .modal-form img {
+    position: absolute;
+    margin-left: 0;
+    right: 30px;
+  }
+
+  .modal-form h1 {
+    margin-top: 50px;
+  }
+
+  .box2 {
+    margin-top: 50px;
+  }
+
+  .box2 textarea {
+    padding-left: 20px;
+    padding-top: 10px;
+    margin-top: 20px;
+    width: 100%;
+    height: 100px;
+  }
+
   .mobile-header a:first-child img {
     width: 50%;
   }
