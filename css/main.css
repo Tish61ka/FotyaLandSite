@@ -149,9 +149,11 @@ header nav ul a:last-child li h3 {
 
 .burger.activated {
   right: 2px;
+  display: block;
 }
 
 .burger {
+  display: none;
   position: absolute;
   float: right;
   width: 220px;
@@ -211,12 +213,15 @@ header nav ul a:last-child li h3 {
   color: black;
 }
 
+.mobile-back {
+  display: none;
+}
 
 .elem span {
   display: block;
   width: 32px;
   height: 4px;
-  background: #FFCB44;
+  background: white;
   margin-bottom: 4px;
 }
 
@@ -288,8 +293,6 @@ header nav ul a:last-child li h3 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-right: 100px;
-  margin-left: 300px;
   margin-bottom: 50px;
 }
 
@@ -405,12 +408,11 @@ header nav ul a:last-child li h3 {
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  margin: 0 100px;
 }
 
 .categories div div img {
-  width: 236px;
-  height: 237px;
+  width: 250px;
+  height: 250px;
 }
 
 .categories div div p {
@@ -428,9 +430,11 @@ header nav ul a:last-child li h3 {
 .show {
   position: relative;
   background-image: url("/img/BackShowpng.png");
+  background-size: cover;
+  background-repeat: no-repeat;
   width: 100vw;
-  height: 1285px;
   padding-top: 65px;
+  padding-bottom: 100px;
   margin-bottom: 100px;
 }
 
@@ -462,6 +466,13 @@ header nav ul a:last-child li h3 {
   filter: drop-shadow(8px 8px 4px rgba(0, 0, 0, 0.25));
   border-radius: 39px;
   margin-bottom: 70px;
+}
+
+.grid-show div a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .grid-show div:first-child {
@@ -550,7 +561,7 @@ header nav ul a:last-child li h3 {
 }
 
 .inside-div p {
-  width: 727px;
+  max-width: 727px;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
@@ -1095,6 +1106,10 @@ footer hr {
   color: #959595;
 }
 
+.Backelement-1 img {
+  width: 100%;
+}
+
 /* Close section footer */
 
 @media screen and (max-width: 1600px) {
@@ -1106,6 +1121,41 @@ footer hr {
   header nav ul a li p {
     font-size: 15px;
   }
+
+  header>img:first-child {
+    width: 1177px;
+  }
+
+  .under-header {
+    margin-bottom: 200px;
+  }
+
+  .under-header div div:first-child {
+    margin-top: 250px;
+    margin-left: 0;
+  }
+
+  .under-header div div:first-child h1 {
+    font-size: 28px;
+  }
+
+  .under-header div div:first-child button {
+    width: 300px;
+    height: 56px;
+    font-size: 18px;
+  }
+
+  .Backelement-1 {
+    width: 415px;
+    top: 420px;
+  }
+
+  .categories div div img {
+    width: 200px;
+    height: 200px;
+  }
+
+
 }
 
 @media screen and (max-width: 1450px) {
@@ -1113,12 +1163,112 @@ footer hr {
   .container {
     max-width: 1000px;
   }
+
+  header>img:first-child {
+    width: 851px;
+  }
+
+  .under-header div div:first-child {
+    margin-top: 170px;
+  }
+
+  .under-header div div:first-child h1 {
+    font-size: 24px;
+  }
+
+  .under-header div div:first-child p {
+    font-size: 18px;
+  }
+
+  .Backelement-1 {
+    width: 300px;
+    top: 300px;
+  }
+
+  .birthay-in-details {
+    align-items: center;
+  }
+
+  .birthay-in-details>div:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+  }
+
+  .birthay-in-details div:first-child h1 {
+    font-size: 36px;
+    margin-top: 0;
+  }
+
+  .birthay-in-details div:first-child h3 {
+    font-size: 20px;
+  }
+
+  .birthay-in-details div:first-child p {
+    font-size: 16px;
+    width: unset;
+  }
+
+  .fade img {
+    width: 400px;
+    height: 400px;
+    transform: translate(20%);
+  }
+
+  .slideshow-container {
+    width: 50%;
+  }
+
+  .grid-show div {
+    width: 300px;
+    height: 370px;
+    margin-bottom: 50px;
+  }
+
+  .inside-div>div div {
+    width: 240px;
+  }
+
+  .inside-div>div div p,
+  .inside-div p {
+    font-size: 16px;
+  }
+
+  .inside-div p {
+    max-width: 680px;
+    margin-bottom: 50px;
+  }
 }
 
 @media screen and (max-width: 1050px) {
 
   .container {
     max-width: 700px;
+  }
+
+  header>img:first-child {
+    width: 732px;
+  }
+
+  .under-header div div:first-child {
+    margin-top: 160px;
+  }
+
+  .under-header div div:first-child h1 {
+    font-size: 18px;
+  }
+
+  .under-header div div:first-child p {
+    width: 250px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .under-header div div:first-child button {
+    width: 210px;
+    height: 40px;
+    font-size: 12px;
   }
 
   header nav ul a:first-child li img {
@@ -1136,6 +1286,52 @@ footer hr {
 
   header nav ul a:last-child li h3 {
     font-size: 13px;
+  }
+
+  .Backelement-1 {
+    width: 300px;
+    top: 240px;
+  }
+
+  .under-header img:nth-child(1) {
+    display: none;
+  }
+
+  .birthay-in-details div:first-child h1 {
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+
+  .birthay-in-details div:first-child h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .birthay-in-details div:first-child p {
+    font-size: 12px;
+    line-height: 15px;
+    width: unset;
+  }
+
+  .fade img {
+    width: 300px;
+    height: 300px;
+    transform: translate(20%);
+  }
+
+  .categories div div img {
+    width: 140px;
+    height: 140px;
+  }
+
+  .grid-show {
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .inside-div>div {
+    flex-wrap: wrap;
   }
 
   .first-footer-div:nth-child(2) div p {
@@ -1169,6 +1365,37 @@ footer hr {
     display: none;
   }
 
+  .mobile-back {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 1400px;
+    top: 0;
+    z-index: 0;
+    display: block !important;
+    width: 600px;
+  }
+
+  .under-header div div:first-child {
+    margin-top: 16px;
+  }
+
+  .under-header div div:first-child h1 {
+    width: 320px;
+    line-height: 27px;
+  }
+
+  .under-header div div:first-child p {
+    width: 220px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .Backelement-1 {
+    width: 240px;
+    top: 240px;
+  }
+
   .mobile-header {
     display: flex;
   }
@@ -1177,12 +1404,61 @@ footer hr {
     display: none;
   }
 
+  .under-header {
+    margin-bottom: 100px;
+  }
+
+  .birthay-in-details {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .birthay-in-details div {
+    width: 100% !important;
+    text-align: center;
+  }
+
+  .birthay-in-details div:first-child h1 {
+    font-size: 34px;
+  }
+
+  .birthay-in-details div:first-child h3 {
+    font-size: 20px;
+  }
+
+  .birthay-in-details div:first-child p {
+    font-size: 16px;
+    line-height: 20px;
+    width: unset;
+  }
+
+  .fade img {
+    width: 400px;
+    height: 400px;
+    transform: translate(0%);
+  }
+
+  .prev {
+    left: 0;
+  }
+
   .first-footer-p {
     display: none;
   }
 
   .social {
     display: none;
+  }
+
+  .categories {
+    display: none;
+  }
+
+  .grid-show div {
+    width: 270px;
+    height: 340px;
+    margin-bottom: 0px;
   }
 
   .footer-bot div:first-child {
@@ -1203,6 +1479,98 @@ footer hr {
   .container {
     max-width: 400px;
   }
+
+  .mobile-back {
+    width: 357px;
+  }
+
+  .under-header div div:first-child {
+    margin-top: 0px;
+  }
+
+  .under-header div div:first-child h1 {
+    width: 270px;
+    line-height: 23px;
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+
+  .under-header div div:first-child p {
+    width: 200px;
+    font-size: 9px;
+    line-height: 12px;
+    margin-bottom: 10px;
+  }
+
+  .under-header div div:first-child button {
+    width: 150px;
+    height: 30px;
+    font-size: 10px;
+  }
+
+  .under-header img:nth-child(1) {
+    display: none;
+  }
+
+  .mobile-header img {
+    width: 50%;
+  }
+
+  .Backelement-1 {
+    width: 200px;
+    top: 130px;
+  }
+
+  .fade img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .birthay-in-details div:first-child h1 {
+    font-size: 24px;
+  }
+
+  .birthay-in-details div:first-child h3 {
+    font-size: 18px;
+  }
+
+  .birthay-in-details div:first-child p {
+    font-size: 12px;
+    line-height: 20px;
+    width: unset;
+  }
+
+  .under-header {
+    margin-bottom: 50px;
+  }
+
+  .grid-show {
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .grid-show div {
+    width: 377px;
+    height: 427px;
+  }
+
+  .inside-div>div div {
+    width: 200px;
+  }
+
+  .inside-div>div div p {
+    width: 100%;
+  }
+
+  .inside-div>div div img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .inside-div>div div p,
+  .inside-div p {
+    font-size: 14px;
+  }
 }
 
 @media screen and (max-width: 450px) {
@@ -1210,8 +1578,51 @@ footer hr {
     max-width: 300px;
   }
 
+  .mobile-back {
+    width: 297px;
+  }
+
+  .under-header div div:first-child h1 {
+    width: 210px;
+    line-height: 10px;
+    font-size: 10px;
+    margin-bottom: 6px;
+  }
+
+  .under-header div div:first-child p {
+    width: 150px;
+    font-size: 8px;
+    line-height: 8px;
+    margin-bottom: 6px;
+  }
+
+  .under-header div div:first-child button {
+    width: 120px;
+    height: 25px;
+    font-size: 8px;
+  }
+
   .mobile-header a:first-child img {
     width: 50%;
+  }
+
+  .Backelement-1 {
+    width: 140px;
+    top: 80px;
+  }
+
+  .fade img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .show h1 {
+    font-size: 22px;
+  }
+
+  .grid-show div {
+    width: 300px;
+    height: 370px;
   }
 
   footer p {

@@ -47,6 +47,8 @@
       </ul>
     </nav>
   </header>
+
+  <img class="mobile-back" src="/img/backhead.png" alt="No Ethernet" />
   <div class="mobile-header container">
     <a href="index.php">
       <img src="/img/logo.png" alt="No Ethernet" />
@@ -98,7 +100,7 @@
   <div class="Backelement-1">
     <img src="img\Backelement-1.png" alt="No Ethernet" />
   </div>
-  <section class="birthay-in-details">
+  <section class="birthay-in-details container">
     <div>
       <h1>Праздник в деталях</h1>
       <h3>Авторские костюмы ручной работы</h3>
@@ -131,33 +133,42 @@
     </div>
     <br />
   </section>
-  <section class="categories">
+  <section class="categories container">
     <div>
       <div>
         <img src="/img/image1.png" alt="No Ethernet" />
-        <p>Авторские костюмы ручной работы</p>
       </div>
       <div>
         <img src="/img/image2.png" alt="No Ethernet" />
-        <p>Фантастические шоу-программы</p>
       </div>
       <div>
         <img src="/img/image3.png" alt="No Ethernet" />
-        <p>Персонализированный сценарий</p>
       </div>
       <div>
         <img src="/img/image4.png" alt="No Ethernet" />
-        <p>Профессиональные актеры</p>
       </div>
       <div>
         <img src="/img/image5.png" alt="No Ethernet" />
-        <p>Качество не привязано к стоимости</p>
       </div>
     </div>
   </section>
   <section class="show">
     <h1>Шоу-программы и квесты</h1>
     <div class="container grid-show">
+      <?
+      require('./functions/connect.php');
+      $sql = $connect->query("SELECT * FROM `animators`");
+      while ($row = $sql->fetch(PDO::FETCH_ASSOC)) {
+      ?>
+        <div style="background-image: url(<?= $row['main_img'] ?>);">
+          <a href="/str_animator.php?id=<?= $row['id'] ?>">
+            <h2><?= $row['main_title'] ?></h2>
+            <button>Подробнее</button>
+          </a>
+        </div>
+      <?
+      }
+      ?>
       <?
       require('./functions/connect.php');
       $sql = $connect->query("SELECT * FROM `animators`");
