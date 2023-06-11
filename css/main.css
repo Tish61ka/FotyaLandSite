@@ -776,7 +776,7 @@ header nav ul a:last-child li h3 {
 }
 
 .top-div-tarif div h1 {
-  width: 350px;
+  width: 260px;
   text-align: center;
   font-style: normal;
   font-weight: 700;
@@ -1402,7 +1402,10 @@ footer hr {
     margin-bottom: 40px;
   }
 
-  .top-div-tarif div h1,
+  .top-div-tarif div h1 {
+    width: 50%;
+  }
+
   .top-div-tarif div p {
     width: 75%;
   }
@@ -1544,7 +1547,7 @@ footer hr {
   }
 
   .top-div-tarif div h1 {
-    width: 60%;
+    width: 40%;
   }
 
   .top-div-tarif div p {
@@ -1666,6 +1669,10 @@ footer hr {
   .bottom-div-tarif>div:first-child {
     width: 100%;
     margin-top: 50px;
+  }
+
+  .top-div-tarif div h1 {
+    width: 60%;
   }
 
   .bottom-div-tarif>div:first-child p {
