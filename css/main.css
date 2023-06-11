@@ -646,8 +646,11 @@ header nav ul a:last-child li h3 {
   justify-content: space-around;
   background-image: url("/img/reviews-back.png");
   width: 100%;
-  height: 649px;
   margin-top: 150px;
+  padding-bottom: 70px;
+  border-radius: 27px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .section-div div {
@@ -725,6 +728,8 @@ header nav ul a:last-child li h3 {
   justify-content: space-between;
   position: relative;
   background-image: url("/img/backgr.png");
+  background-size: cover;
+  background-repeat: no-repeat;
   width: 100vw;
   height: 2055px;
   padding-top: 80px;
@@ -748,9 +753,9 @@ header nav ul a:last-child li h3 {
   justify-content: space-between;
 }
 
-.top-div-tarif div:first-child,
-.top-div-tarif div:nth-child(2),
-.top-div-tarif div:last-child {
+.top-div-tarif>div:first-child,
+.top-div-tarif>div:nth-child(2),
+.top-div-tarif>div:last-child {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -759,14 +764,15 @@ header nav ul a:last-child li h3 {
   border: 0.4px solid #c7c7c7;
   box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.25);
   border-radius: 35px;
+  padding: 10px 0;
 }
 
 .top-div-tarif div:first-child {
-  height: 567px;
+  max-height: 460px;
 }
 
 .top-div-tarif div:nth-child(2) {
-  height: 740px;
+  max-height: 630px;
 }
 
 .top-div-tarif div h1 {
@@ -1239,6 +1245,39 @@ footer hr {
     max-width: 680px;
     margin-bottom: 50px;
   }
+
+  .section-div div {
+    width: 300px;
+    height: auto;
+    padding: 30px 0;
+    top: -80px;
+  }
+
+  .section-div div p:first-child {
+    width: 90%;
+    margin-bottom: 30px;
+  }
+
+  .top-div-tarif div h1,
+  .top-div-tarif div p {
+    width: 80%;
+  }
+
+  .top-div-tarif div div:nth-child(3) {
+    padding-left: 20px;
+  }
+
+  .top-div-tarif div:first-child {
+    max-height: 580px;
+  }
+
+  .top-div-tarif div:nth-child(2) {
+    max-height: 800px;
+  }
+
+  .bottom-div-tarif img {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 1050px) {
@@ -1332,6 +1371,40 @@ footer hr {
 
   .inside-div>div {
     flex-wrap: wrap;
+  }
+
+  .section-div {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: none;
+    margin-top: 150px;
+    padding-bottom: 30px;
+  }
+
+  .section-div div {
+    width: 70%;
+    margin-bottom: 50px;
+  }
+
+  .tarif {
+    height: auto;
+  }
+
+  .top-div-tarif {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .top-div-tarif>div {
+    width: 70% !important;
+    margin-bottom: 40px;
+  }
+
+  .top-div-tarif div h1,
+  .top-div-tarif div p {
+    width: 75%;
   }
 
   .first-footer-div:nth-child(2) div p {
@@ -1461,6 +1534,23 @@ footer hr {
     margin-bottom: 0px;
   }
 
+  .section-div div {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .top-div-tarif>div {
+    width: 100% !important;
+  }
+
+  .top-div-tarif div h1 {
+    width: 60%;
+  }
+
+  .top-div-tarif div p {
+    width: 90%;
+  }
+
   .footer-bot div:first-child {
     display: none;
   }
@@ -1547,6 +1637,7 @@ footer hr {
   .grid-show {
     grid-template-rows: repeat(6, 1fr);
     grid-template-columns: repeat(1, 1fr);
+    text-align: center;
   }
 
   .grid-show div {
@@ -1570,6 +1661,28 @@ footer hr {
   .inside-div>div div p,
   .inside-div p {
     font-size: 14px;
+  }
+
+  .bottom-div-tarif>div:first-child {
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  .bottom-div-tarif>div:first-child p {
+    width: 90%;
+  }
+
+  .bottom-div-tarif form input[type="text"] {
+    width: 90%;
+  }
+
+  .check div {
+    width: 50%;
+  }
+
+  .bottom-div-tarif button {
+    width: 40%;
+    margin-left: 0;
   }
 }
 
@@ -1620,9 +1733,35 @@ footer hr {
     font-size: 22px;
   }
 
+  .inside-div>div {
+    justify-content: center;
+  }
+
+  .inside-div-1 button {
+    width: 100%;
+  }
+
   .grid-show div {
     width: 300px;
     height: 370px;
+  }
+
+  .top-div-tarif div:first-child {
+    max-height: 620px;
+  }
+
+  .top-div-tarif div h1 {
+    width: 80%;
+  }
+
+  .top-div-tarif div:nth-child(2) {
+    max-height: 850px;
+  }
+
+  .bottom-div-tarif h1 {
+    width: 90%;
+    font-size: 40px;
+    line-height: 39px;
   }
 
   footer p {
