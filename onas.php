@@ -10,8 +10,8 @@
 </head>
 
 <body>
-  <header class="container">
-    <nav>
+  <header>
+    <nav class="container">
       <ul>
         <a href="index.php">
           <li>
@@ -80,9 +80,10 @@
     </div>
   </div>
 
-  <section class="o_nas">
-    <div class="kekno">
-      <img src="img/o_nas.png" alt="нет настроения">
+  <img class="leftImg" src="/img/bckheadl.png" alt="No Ethernet" />
+  <img class="rightImg" src="/img/bckheadr.png" alt="No Ethernet" />
+  <section class="o_nas container">
+    <div>
       <h1>Fotya Land - это</h1>
       <p>один из способов найти подходящих аниматоров и квест для вашего праздника. С 2022 года наша миссия – делать
         детские праздники по-настоящему яркими событиями. Такими, которые они запомнят на всю жизнь. Построения
@@ -94,14 +95,8 @@
     </div>
   </section>
 
-  <section class="under-header">
-    <img class="imgl" src="/img/bckheadl.png" alt="No Ethernet" />
-    <img class="imgr" src="/img/bckheadr.png" alt="No Ethernet" />
-  </section>
-
-  <section class="chto">
-    <div class="chto_est">
-      <img src="img/spider-man.png" alt="нет настроения">
+  <section class="chto container">
+    <div>
       <h1>Что у нас для этого есть?</h1>
       <p>○ Увлекательные мастер классы<br>
         ○ Профессиональные аниматоры<br>
@@ -109,26 +104,24 @@
         ○ Десятки праздничных сценариев<br>
         ○ Аутентичный инвентарь и костюмы</p>
     </div>
+    <img src="img/spider-man.png" alt="нет настроения">
   </section>
 
   <section class="photografi">
-    <div class="foto">
-      <h1>Фотографии</h1>
-      <img src="img/photografi.png" alt="нет настроения">
-    </div>
+    <h1>Фотографии</h1>
+    <img src="img/photografi.png" alt="нет настроения">
   </section>
-  <section class="kontakt">
+  <section class="kontakt container">
+    <img src="img/kontaktik.png" alt="нет настроения">
     <div class="kontik">
-      <img src="img/kontaktik.png" alt="нет настроения">
       <h1>Контакты</h1>
-      <p>E-mail: fotyaland@mail.ru<br>
-        8 (961) 815-97-70<br>
-        г. Москва Ул. Н. Бреженская 68к2<br>
-      </p>
+      <p>E-mail: fotyaland@mail.ru</p>
+      <p> 8 (961) 815-97-70</p>
+      <p>г. Москва Ул. Н. Бреженская 68к2</p>
     </div>
   </section>
   <section class="maps">
-    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A183e4b1755642b09d85276db1439ff49be85e4812b1ddd7772f5806f9c6b81bb&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>
+    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A183e4b1755642b09d85276db1439ff49be85e4812b1ddd7772f5806f9c6b81bb&amp;width=100vw25&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>
   </section>
   <footer>
     <div class="container">

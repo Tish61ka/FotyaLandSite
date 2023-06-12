@@ -11,15 +11,12 @@ $animator = $sql->fetch(PDO::FETCH_ASSOC);
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="/examples/libs/ui-components/itc-slider/itc-slider.css" rel="stylesheet" />
   <link rel="stylesheet" href="/css/main5.css" />
   <title>FotyaLand</title>
 </head>
 
 <body>
   <header>
-    <img width="1132" height="593" src="<?= $animator['right_img'] ?>" alt="No Ethernet" />
-    <img class="logoa1" src="<?= $animator['left_img'] ?>" alt="No Ethernet" />
     <nav>
       <ul>
         <a href="index.php">
@@ -53,22 +50,60 @@ $animator = $sql->fetch(PDO::FETCH_ASSOC);
       </ul>
     </nav>
   </header>
+  <div class="mobile-header container">
+    <a href="index.php">
+      <img src="/img/logo.png" alt="No Ethernet" />
+    </a>
+    <div class="elem" onclick="burger()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="burger">
+      <ul>
+        <? require('./header.php') ?>
+        <a href="/show_program.php">
+          <li>
+            <p>Шоу-программы и квесты</p>
+          </li>
+        </a>
+        <a href="/animators.php">
+          <li>
+            <p>Аниматоры</p>
+          </li>
+        </a>
+        <a href="/otzivi.php">
+          <li>
+            <p>Отзывы</p>
+          </li>
+        </a>
+        <a href="/onas.php">
+          <li>
+            <p>О нас</p>
+          </li>
+        </a>
+      </ul>
+    </div>
+  </div>
+  <!-- style="background-image: url('<?= $animator['right_img'] ?>');" -->
   <section class="under-header">
+    <img class="backimg" src="<?= $animator['right_img'] ?>" alt="No Ethernet" />
     <div class="container">
+      <img class="logoa1" src="<?= $animator['left_img'] ?>" alt="No Ethernet" />
       <div>
         <h1><?= $animator['title'] ?></h1>
         <button>Оставить заявку</button>
       </div>
     </div>
   </section>
-  <section class="osnova">
-    <img class="imga2" src="<?= $animator['bottom_first'] ?>" alt="No Ethernet" />
-    <img class="imga3" src="<?= $animator['bottom_second'] ?>" alt="No Ethernet" />
-    <div class="container">
-      <div>
-        <h1>Программа и активности</h1>
-        <p><?= $animator['text'] ?></p>
-      </div>
+  <section class="container osnova">
+    <div>
+      <img class="imga2" src="<?= $animator['bottom_first'] ?>" alt="No Ethernet" />
+      <img class="imga3" src="<?= $animator['bottom_second'] ?>" alt="No Ethernet" />
+    </div>
+    <div>
+      <h1>Программа и активности</h1>
+      <p><?= $animator['text'] ?></p>
     </div>
   </section>
 
@@ -91,9 +126,7 @@ $animator = $sql->fetch(PDO::FETCH_ASSOC);
       </div>
     </div>
   </section>
-
   <section class="tarif" style="background-image: url(<?= $animator['bottom_page_img_left'] ?>);">
-
     <div class="bottom-div-tarif container">
       <div>
         <h1>Не нашли подходящего персонажа?</h1>
@@ -101,7 +134,7 @@ $animator = $sql->fetch(PDO::FETCH_ASSOC);
           Оставьте заявку на сайте и расскажите, что нравится вашему ребенку.
           Мы подберем любимого героя для вашего праздника.
         </p>
-        <form action="./functions/otziv.php" method="post">
+        <form action="./functions/otziv.php" method="POST">
           <div class="input">
             <label for="">Имя</label>
             <input type="text" name="name" placeholder="Как вас зовут?" />
@@ -122,6 +155,8 @@ $animator = $sql->fetch(PDO::FETCH_ASSOC);
       <img src="<?= $animator['bottom_page_img_right'] ?>" alt="No Ethernet" />
     </div>
   </section>
+  </section>
+
   <footer>
     <div class="container">
       <div class="first-footer-div">
@@ -188,8 +223,7 @@ $animator = $sql->fetch(PDO::FETCH_ASSOC);
     </div>
   </footer>
   <script src="/js/scroll.js"></script>
-  <script src="/js/slider.js"></script>
-  <script text="java/script" src="/examples/libs/ui-components/itc-slider/itc-slider.js" defer>
+  <script src="/js/burger.js"></script>
   </script>
 </body>
 

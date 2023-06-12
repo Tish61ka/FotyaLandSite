@@ -31,7 +31,7 @@
                     <input type="password" required name="password" required>
                 </div>
                 <div class="check">
-                    <input type="checkbox" required required>
+                    <input type="checkbox" required>
                     <p>Соглашаюсь со всеми условиями
                     </p>
                 </div>
