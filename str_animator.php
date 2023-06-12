@@ -102,7 +102,7 @@ $animator = $sql->fetch(PDO::FETCH_ASSOC);
       <img class="imga3" src="<?= $animator['bottom_second'] ?>" alt="No Ethernet" />
     </div>
     <div>
-      <h1>Программа и активности</h1>
+      <h1>Описание</h1>
       <p><?= $animator['text'] ?></p>
     </div>
   </section>

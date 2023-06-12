@@ -34,12 +34,14 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  background: var(--second-bg-color);
+  background: transparent;
+  margin: 20px 10px;
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: var(--main-bg-color);
-  border: 1px solid black;
+  background: #D9D9D9;
+  border-radius: 26px;
+  border: none;
 }
 
 .container {
@@ -91,6 +93,7 @@ header nav ul a li p {
 }
 
 header nav ul a li button {
+  cursor: pointer;
   width: 200px;
   height: 45px;
   background: linear-gradient(180deg, #ffb641 0%, #ff932c 100%);
@@ -276,6 +279,7 @@ header nav ul a:last-child li h3 {
 }
 
 .under-header div div:first-child button {
+  cursor: pointer;
   width: 400px;
   height: 75px;
   background: #ffc400;
@@ -536,7 +540,8 @@ header nav ul a:last-child li h3 {
   cursor: pointer;
 }
 
-.show>button:last-child {
+.show> a button:last-child {
+  cursor: pointer;
   position: absolute;
   width: 325px;
   height: 55px;
@@ -718,6 +723,7 @@ header nav ul a:last-child li h3 {
 }
 
 .inside-div-1 button {
+  cursor: pointer;
   position: relative;
   width: 348px;
   height: 58px;
