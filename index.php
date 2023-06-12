@@ -157,7 +157,7 @@
     <div class="container grid-show">
       <?
       require('./functions/connect.php');
-      $sql = $connect->query("SELECT * FROM `animators`");
+      $sql = $connect->query("SELECT * FROM `animators` LIMIT 6");
       while ($row = $sql->fetch(PDO::FETCH_ASSOC)) {
       ?>
         <div style="background-image: url(<?= $row['main_img'] ?>);">
@@ -169,11 +169,11 @@
       <?
       }
       ?>
-      <?
-      require('./functions/connect.php');
-      $sql = $connect->query("SELECT * FROM `animators`");
-      while ($row = $sql->fetch(PDO::FETCH_ASSOC)) {
-      ?>
+      <!-- <?
+            require('./functions/connect.php');
+            $sql = $connect->query("SELECT * FROM `animators` ");
+            while ($row = $sql->fetch(PDO::FETCH_ASSOC)) {
+            ?>
         <div style="background-image: url(<?= $row['main_img'] ?>);">
           <a href="/str_animator.php?id=<?= $row['id'] ?>">
             <h2><?= $row['main_title'] ?></h2>
@@ -181,8 +181,8 @@
           </a>
         </div>
       <?
-      }
-      ?>
+            }
+      ?> -->
 
       <!-- <div>
         <h2>Дикий запад</h2>

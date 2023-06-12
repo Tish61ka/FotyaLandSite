@@ -82,6 +82,7 @@
                     while ($row = $sql->fetch(PDO::FETCH_ASSOC)) {
                     ?>
                         <div>
+                            <a href="./functions/remove_review.php?id=<?= $row['id'] ?>" style="color: red">X</a>
                             <p>Отзыв: <?= $row['text'] ?></p>
                             <div>
                                 <img width="200" src="<?= $row['img'] ?>" alt="">
@@ -98,6 +99,7 @@
                             <?
                             }
                             ?>
+
                         </div>
                     <?
                     }

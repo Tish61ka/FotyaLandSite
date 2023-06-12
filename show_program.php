@@ -106,108 +106,68 @@
   <section class="show">
 
     <div class="container grid-show">
-      <div>
-        <h2>Шоколадная фабрика</h2>
-        <button>Подробнее</button>
-      </div>
-      <div>
-        <h2>Дикий запад</h2>
-        <button>Подробнее</button>
-      </div>
-      <div>
-        <button>Подробнее</button>
-        <h2>Изумрудный город</h2>
-      </div>
-      <div>
-        <h2>Тайная комната</h2>
-        <button>Подробнее</button>
-      </div>
-      <div>
-        <h2>Звездный путь</h2>
-        <button>Подробнее</button>
-      </div>
-      <div>
-        <h2>Подземные расследования</h2>
-        <button>Подробнее</button>
-      </div>
+      <?
+      require('./functions/connect.php');
+      $sql = $connect->query("SELECT * FROM `animators` WHERE `type` = 'one_year'");
+      while ($row = $sql->fetch(PDO::FETCH_ASSOC)) {
+      ?>
+        <div style="background-image: url(<?= $row['main_img'] ?>);">
+          <a href="/str_animator.php?id=<?= $row['id'] ?>">
+            <h2><?= $row['main_title'] ?></h2>
+            <button>Подробнее</button>
+          </a>
+        </div>
+      <?
+      }
+      ?>
     </div>
     <div class="container grid-show invisible">
-      <div>
-        <h2>Шоколадная фабрика</h2>
-        <button>Подробнее</button>
-      </div>
-      <div>
-        <h2>Дикий запад</h2>
-        <button>Подробнее</button>
-      </div>
-      <div>
-        <button>Подробнее</button>
-        <h2>Изумрудный город</h2>
-      </div>
-      <div>
-        <h2>Тайная комната</h2>
-        <button>Подробнее</button>
-      </div>
-      <div>
-        <h2>Звездный путь</h2>
-        <button>Подробнее</button>
-      </div>
-      <div>
-        <h2>Подземные расследования</h2>
-        <button>Подробнее</button>
-      </div>
+      <?
+      require('./functions/connect.php');
+      $sql = $connect->query("SELECT * FROM `animators` WHERE `type` = 'two_year'");
+      while ($row = $sql->fetch(PDO::FETCH_ASSOC)) {
+      ?>
+        <div style="background-image: url(<?= $row['main_img'] ?>);">
+          <a href="/str_animator.php?id=<?= $row['id'] ?>">
+            <h2><?= $row['main_title'] ?></h2>
+            <button>Подробнее</button>
+          </a>
+        </div>
+      <?
+      }
+      ?>
     </div>
     <div class="container grid-show invisible">
-      <div>
-        <h2>Шоколадная фабрика</h2>
-        <button>Подробнее</button>
-      </div>
-      <div>
-        <h2>Дикий запад</h2>
-        <button>Подробнее</button>
-      </div>
-      <div>
-        <button>Подробнее</button>
-        <h2>Изумрудный город</h2>
-      </div>
-      <div>
-        <h2>Тайная комната</h2>
-        <button>Подробнее</button>
-      </div>
-      <div>
-        <h2>Звездный путь</h2>
-        <button>Подробнее</button>
-      </div>
-      <div>
-        <h2>Подземные расследования</h2>
-        <button>Подробнее</button>
-      </div>
+      <?
+      require('./functions/connect.php');
+      $sql = $connect->query("SELECT * FROM `animators` WHERE `type` = 'five_year'");
+      while ($row = $sql->fetch(PDO::FETCH_ASSOC)) {
+      ?>
+        <div style="background-image: url(<?= $row['main_img'] ?>);">
+          <a href="/str_animator.php?id=<?= $row['id'] ?>">
+            <h2><?= $row['main_title'] ?></h2>
+            <button>Подробнее</button>
+          </a>
+        </div>
+      <?
+      }
+      ?>
     </div>
     <div class="container grid-show invisible">
-      <div>
-        <h2>Шоколадная фабрика</h2>
-        <button>Подробнее</button>
-      </div>
-      <div>
-        <h2>Дикий запад</h2>
-        <button>Подробнее</button>
-      </div>
-      <div>
-        <button>Подробнее</button>
-        <h2>Изумрудный город</h2>
-      </div>
-      <div>
-        <h2>Тайная комната</h2>
-        <button>Подробнее</button>
-      </div>
-      <div>
-        <h2>Звездный путь</h2>
-        <button>Подробнее</button>
-      </div>
-      <div>
-        <h2>Подземные расследования</h2>
-        <button>Подробнее</button>
-      </div>
+      <?
+      require('./functions/connect.php');
+      $sql = $connect->query("SELECT * FROM `animators` WHERE `type` = 'eight_year'");
+      while ($row = $sql->fetch(PDO::FETCH_ASSOC)) {
+      ?>
+        <div style="background-image: url(<?= $row['main_img'] ?>);">
+          <a href="/str_animator.php?id=<?= $row['id'] ?>">
+            <h2><?= $row['main_title'] ?></h2>
+            <button>Подробнее</button>
+          </a>
+        </div>
+      <?
+      }
+      ?>
     </div>
   </section>
 
