@@ -1,4 +1,9 @@
-<? session_start() ?>
+<? session_start();
+require('./functions/connect.php');
+$id = $_GET['id'];
+$sql = $connect->query("SELECT * FROM `showp` WHERE `id` = '$id'");
+$animator = $sql->fetch(PDO::FETCH_ASSOC);
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,13 +11,12 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="/examples/libs/ui-components/itc-slider/itc-slider.css" rel="stylesheet" />
-  <link rel="stylesheet" href="/css/main2.css" />
+  <link rel="stylesheet" href="/css/main5.css" />
   <title>FotyaLand</title>
 </head>
 
 <body>
-  <header class="container">
+  <header>
     <nav>
       <ul>
         <a href="index.php">
@@ -81,39 +85,48 @@
       </ul>
     </div>
   </div>
+  <!-- style="background-image: url('<?= $animator['right_img'] ?>');" -->
   <section class="under-header">
+    <img class="backimg" src="<?= $animator['right_img'] ?>" alt="No Ethernet" />
     <div class="container">
-      <h1>Аниматоры</h1>
-      <p>
-      Мы поможем детям ощутить волшебство и суперсилу, ведь они так верят в сказку и героев. 
-      Детские аниматоры из Fotya Land не просто актёры, они умеют настолько реалистично 
-      играть различные роли, что переносят детей в мир фантазии и заставляют их забыть 
-      обо всём на свете.
-      </p>
-      <button>Оставить заявку</button>
+      <img class="logoa1" src="<?= $animator['left_img'] ?>" alt="No Ethernet" />
+      <div>
+        <h1><?= $animator['title'] ?></h1>
+        <button>Оставить заявку</button>
+      </div>
     </div>
   </section>
+  <section class="container osnova">
+    <div>
+      <img class="imga2" src="<?= $animator['bottom_first'] ?>" alt="No Ethernet" />
+      <img class="imga3" src="<?= $animator['bottom_second'] ?>" alt="No Ethernet" />
+    </div>
+    <div>
+      <h1>Описание</h1>
+      <p><?= $animator['text'] ?></p>
+    </div>
+  </section>
+
 
   <section class="show">
+    <h1>Похожее</h1>
     <div class="container grid-show">
-      <?
-      require('./functions/connect.php');
-      $sql = $connect->query("SELECT * FROM `showp`");
-      while ($row = $sql->fetch(PDO::FETCH_ASSOC)) {
-      ?>
-        <div style="background-image: url(<?= $row['main_img'] ?>);">
-          <a href="/str_showp.php?id=<?= $row['id'] ?>">
-            <h2><?= $row['main_title'] ?></h2>
-            <button>Подробнее</button>
-          </a>
-        </div>
-      <?
-      }
-      ?>
+
+      <div>
+        <h2>Тайная комната</h2>
+        <button>Подробнее</button>
+      </div>
+      <div>
+        <h2>Звездный путь</h2>
+        <button>Подробнее</button>
+      </div>
+      <div>
+        <h2>Подземные расследования</h2>
+        <button>Подробнее</button>
+      </div>
     </div>
   </section>
-
-  <section class="tarif">
+  <section class="tarif" style="background-image: url(<?= $animator['bottom_page_img_left'] ?>);">
     <div class="bottom-div-tarif container">
       <div>
         <h1>Не нашли подходящего персонажа?</h1>
@@ -139,9 +152,11 @@
           </div>
         </form>
       </div>
-      <img src="/img/tarifimg3.png" alt="No Ethernet" />
+      <img src="<?= $animator['bottom_page_img_right'] ?>" alt="No Ethernet" />
     </div>
   </section>
+  </section>
+
   <footer>
     <div class="container">
       <div class="first-footer-div">
@@ -208,10 +223,8 @@
     </div>
   </footer>
   <script src="/js/scroll.js"></script>
-  <script src="/js/slider.js"></script>
-  <script text="java/script" src="/examples/libs/ui-components/itc-slider/itc-slider.js" defer>
-  </script>
   <script src="/js/burger.js"></script>
+  </script>
 </body>
 
 </html>
