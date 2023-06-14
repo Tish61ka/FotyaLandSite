@@ -227,6 +227,26 @@ header nav ul a li button {
   margin-bottom: 4px;
 }
 
+.danger-modal {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  bottom: 50px;
+  right: 2px;
+  width: 250px;
+  height: 70px;
+  background-color: #FFCB44;
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+}
+
+.danger-modal.close-modal {
+  display: none;
+}
+
 /* Modal  */
 .modal-icon {
   position: fixed;

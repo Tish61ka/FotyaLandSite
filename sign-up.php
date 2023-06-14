@@ -48,7 +48,7 @@
                 </div>
                 <div class="check">
                     <input type="checkbox" required required>
-                    <p>Соглашаюсь со всеми условиями
+                    <p><a href="/politica.html">Соглашаюсь со всеми условиями</a>
                     </p>
                 </div>
                 <input type="submit" value="Зарегистрироваться">

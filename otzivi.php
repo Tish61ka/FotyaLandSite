@@ -81,6 +81,9 @@
       </ul>
     </div>
   </div>
+  <div class="danger-modal close-modal">
+    <p>Вы не в аккаунте!</p>
+  </div>
   <div class="modal-icon removed">
     <div class="modal-form">
       <img src="/img/cross.svg" onclick="closeModal()"></img> <!-- Тут должно быть свг крестик не забудь перенисти онклик в свг -->
@@ -116,7 +119,7 @@
       <?
       if (empty($_SESSION['user']) && empty($_SESSION['admin'])) {
       ?>
-        <button>Оставить отзыв</button>
+        <button onclick="openDanger()">Оставить отзыв</button>
       <?
       } else {
       ?>
