@@ -90,7 +90,7 @@
       играть различные роли, что переносят детей в мир фантазии и заставляют их забыть 
       обо всём на свете.
       </p>
-      <button>Оставить заявку</button>
+      <a href="#31"><button>Оставить заявку</button></a>
     </div>
   </section>
 
@@ -113,7 +113,7 @@
     </div>
   </section>
 
-  <section class="tarif">
+  <section class="tarif" id="31">
     <div class="bottom-div-tarif container">
       <div>
         <h1>Не нашли подходящего персонажа?</h1>

@@ -425,9 +425,9 @@
     <hr />
     <div class="footer-bot container">
       <div>
-        <a href="">Условия соглашения</a>
+        <a href="/politica.html" target="_blank">Условия соглашения</a>
         <p>|</p>
-        <a href="">Конфиденциальность</a>
+        <a href="/politica.html" target="_blank">Конфиденциальность</a>
       </div>
       <div>
         <p>Copyright Ⓒ 2022 FOTYALAND by ‘’Sav’’ inc.</p>

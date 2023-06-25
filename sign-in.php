@@ -32,7 +32,7 @@
                 </div>
                 <div class="check">
                     <input type="checkbox" required>
-                    <p><a href="/politica.html">Соглашаюсь со всеми условиями</a>
+                    <p><a href="/politica.html" target="_blank">Я принимаю условия политики обработки персональных данных</a>
                     </p>
                 </div>
                 <input type="submit" value="Войти">

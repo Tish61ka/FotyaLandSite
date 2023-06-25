@@ -255,6 +255,7 @@ header nav ul a:last-child li h3 {
 }
 
 .under-header div div:first-child button {
+  cursor: pointer;
   width: 400px;
   height: 65px;
   background: #ffc400;

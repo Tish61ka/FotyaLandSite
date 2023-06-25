@@ -92,7 +92,7 @@
         чтобы никто не скучал на нашем празднике!
 
         </p>
-        <button>Оставить заявку</button>
+        <a href="#21"><button>Оставить заявку</button></a>
       </div>
     </div>
   </section>
@@ -173,7 +173,7 @@
   </section>
 
 
-  <section class="tarif">
+  <section class="tarif" id="21">
     <div class="bottom-div-tarif container">
       <div>
         <h1>Не нашли подходящего персонажа?</h1>
